@@ -6,6 +6,9 @@ namespace HelloWorld
 {
     class Game
     {
+        //Ends the game when true
+        private bool _gameOver = false;
+        
         //Run the game
         public void Run()
         {
@@ -20,25 +23,22 @@ namespace HelloWorld
             End();
         }
 
-        //Initialization method
+        //Performed once when the game begins
         public void Start()
         {
 
         }
 
-        //Method repeated each refresh
+        //Repeated until the game ends
         public void Update()
         {
 
         }
 
-        //Cleanup method
+        //Performed once when the game ends
         public void End()
         {
 
         }
-
-        public void ToggleGameOver() { _gameOver = !_gameOver; }
-        private bool _gameOver = false;
     }
 }
